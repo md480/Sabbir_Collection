@@ -3,49 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabbir Collection | Premium Apparel</title>
+    <title>Sabbir Collection | Premium Factory Trousers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; line-height: 1.6; }
-        header { background: #000; color: #fff; padding: 60px 20px; text-align: center; border-bottom: 5px solid #28a745; }
-        header h1 { margin: 0; font-size: 45px; text-transform: uppercase; letter-spacing: 4px; }
-        .container { width: 90%; max-width: 1200px; margin: auto; padding: 40px 0; }
-        .section-title { text-align: center; font-size: 32px; margin-bottom: 40px; position: relative; padding-bottom: 15px; color: #1a1a1a; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 60px; }
-        .product-card { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; border: 1px solid #eee; }
-        .product-card img { width: 100%; height: 380px; object-fit: cover; }
-        .info { padding: 25px; }
-        .price { font-size: 24px; font-weight: 700; color: #28a745; margin-bottom: 20px; }
-        .buy-btn { background: #25D366; color: #fff; padding: 14px 30px; text-decoration: none; border-radius: 50px; display: inline-block; font-weight: 600; }
-        footer { background: #1a1a1a; color: #fff; text-align: center; padding: 30px; }
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; }
+        header { background: #000; color: #fff; padding: 50px 20px; text-align: center; border-bottom: 5px solid #28a745; }
+        header h1 { margin: 0; font-size: 38px; text-transform: uppercase; letter-spacing: 3px; }
+        .container { width: 92%; max-width: 1200px; margin: auto; padding: 40px 0; }
+        .section-title { text-align: center; font-size: 30px; margin-bottom: 40px; color: #1a1a1a; position: relative; padding-bottom: 10px; }
+        .section-title::after { content: ''; width: 70px; height: 4px; background: #28a745; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; margin-bottom: 60px; }
+        .product-card { background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; border: 1px solid #eee; }
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .product-card img { width: 100%; height: 350px; object-fit: cover; }
+        .info { padding: 20px; }
+        .price { font-size: 22px; font-weight: 700; color: #28a745; margin-bottom: 20px; }
+        .buy-btn { background: #25D366; color: #fff; padding: 12px 25px; text-decoration: none; border-radius: 50px; display: inline-block; font-weight: 600; transition: 0.3s; }
+        .contact-section { background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-top: 40px; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .contact-item h4 { color: #28a745; margin-bottom: 15px; font-size: 20px; }
+        .social-icons a { font-size: 28px; margin-right: 20px; color: #333; transition: 0.3s; }
+        .social-icons a:hover { color: #28a745; }
+        footer { background: #1a1a1a; color: #fff; text-align: center; padding: 30px; margin-top: 50px; }
+        .chat-container { position: fixed; bottom: 25px; right: 25px; display: flex; flex-direction: column; gap: 15px; z-index: 9999; }
+        .float-btn { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); text-decoration: none; transition: 0.3s; }
+        .wa-float { background: #25D366; }
+        .ms-float { background: #0084FF; }
     </style>
 </head>
 <body>
+
 <header>
     <h1>Sabbir Collection</h1>
-    <p>Manufacturer of Premium Quality Trousers</p>
+    <p>Premium Quality Bottomwear Directly from Factory</p>
 </header>
+
 <div class="container">
-    <h2 class="section-title">Premium Collection</h2>
-    <div class="product-grid">
-        <div class="product-card">
-            <img src="IMG20260227201904.jpg" alt="AX Premium Trouser">
-            <div class="info">
-                <h3>AX Series Premium Trouser</h3>
-                <div class="price">৳ 550</div>
-                <a href="https://wa.me/8801568988609" class="buy-btn">Order on WhatsApp</a>
-            </div>
+    <h2 class="section-title" id="shorts-title">Premium Shorts</h2>
+    <div class="product-grid" id="shorts-container">
         </div>
-        <div class="product-card">
-            <img src="IMG_20260409_013702.png" alt="Black Lace Short">
-            <div class="info">
-                <h3>Urban Black Side-Lace</h3>
-                <div class="price">৳ 350</div>
-                <a href="https://wa.me/8801568988609" class="buy-btn">Order on WhatsApp</a>
+
+    <h2 class="section-title">Full Trousers</h2>
+    <div class="product-grid" id="trousers-container">
+        </div>
+
+    <div class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-item">
+                <h4><i class="fas fa-map-marker-alt"></i> Factory Address</h4>
+                <p>Aga Nagar, Keraniganj, Dhaka</p>
+            </div>
+            <div class="contact-item">
+                <h4><i class="fas fa-phone-alt"></i> Contact Info</h4>
+                <p>Phone: +880 1568-988609</p>
+                <p>Email: mdsabbirhasan22@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <h4><i class="fas fa-share-alt"></i> Social Media</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61575373874220" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@sabbir_collection" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<footer><p>&copy; 2026 Sabbir Collection</p></footer>
+
+<div class="chat-container">
+    <a href="https://wa.me/8801568988609" class="float-btn wa-float"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://m.me/61575373874220" class="float-btn ms-float"><i class="fab fa-facebook-messenger"></i></a>
+</div>
+
+<footer><p>&copy; 2026 Sabbir Collection | All Rights Reserved.</p></footer>
+
+<script>
+    const shortsContainer = document.getElementById('shorts-container');
+    const trousersContainer = document.getElementById('trousers-container');
+
+    // Displaying 30 slots for both categories
+    for (let i = 1; i <= 30; i++) {
+        // Shorts logic (Assuming 1-15 are shorts)
+        shortsContainer.innerHTML += `
+            <div class="product-card" onerror="this.style.display='none'">
+                <img src="${i}.jpg" alt="Short" onerror="this.parentElement.style.display='none'">
+                <div class="info">
+                    <h3>Premium Short #${i}</h3>
+                    <div class="price">৳ 350</div>
+                    <a href="https://wa.me/8801568988609?text=I'm interested in Short #${i}" class="buy-btn">Order Now</a>
+                </div>
+            </div>`;
+
+        // Trousers logic (Assuming 16-30 are trousers)
+        trousersContainer.innerHTML += `
+            <div class="product-card" onerror="this.style.display='none'">
+                <img src="${i+15}.jpg" alt="Trouser" onerror="this.parentElement.style.display='none'">
+                <div class="info">
+                    <h3>Premium Trouser #${i+15}</h3>
+                    <div class="price">৳ 550</div>
+                    <a href="https://wa.me/8801568988609?text=I'm interested in Trouser #${i+15}" class="buy-btn">Order Now</a>
+                </div>
+            </div>`;
+    }
+</script>
 </body>
 </html>
